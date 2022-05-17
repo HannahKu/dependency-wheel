@@ -5,6 +5,7 @@ var width = 760,
     innerRadius = outerRadius - 15;
 
 //relation matrix
+//EDIT
 var dataset = [
     [0,  0, 1, 1, 0, 1],
     [ 0, 0, 1, 1, 0, 1],
@@ -29,7 +30,7 @@ var path = d3.svg.chord()
 //that are the same except for the data.
 function getDefaultLayout() {
     return d3.layout.chord()
-    .padding(0.1) // space bewtween groups
+    .padding(0.1) // EDIT space bewtween groups
     .sortSubgroups(d3.descending)
     .sortChords(d3.ascending);
 }  
@@ -42,8 +43,7 @@ var g = d3.select("#my_dataviz").append("svg")
         .attr("height", height)
         .append("g")
         .attr("id", "circle")
-        .attr("transform", 
-              "translate(" + width / 2 + "," + height / 2 + ")");
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 //the entire graphic will be drawn within this <g> element,
 //so all coordinates will be relative to the center of the circle
 
