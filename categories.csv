@@ -1,7 +1,14 @@
 name,color
-Test0,#FF00FF
-Test1,#0000FF
-Test2,#6495ED
-Test3,#F4A460
-Test4,#00A460
-Test5,#F4AF00
+IA,#FF00FF
+IPPE,#FF00FF
+IEE,#FF00FF
+Pfiffner Group,#0000FF
+Brugg Cables,#0000FF
+Veranstaltungen,#6495ED
+Forschungsprojekte,#6495ED
+Aktivitäten,#6495ED
+Praxissemester,#6495ED
+Studienprojekte,#6495ED
+Kompetenz 3,#F4A460
+Kompetenz 2,#F4A460
+Kompetenz 1,#F4A460
