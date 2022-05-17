@@ -1,22 +1,18 @@
 /*** Define parameters and tools ***/
 var width = 760,
     height = 820,
-    outerRadius = Math.min(width, height) / 2 - 120,//100,
-    innerRadius = outerRadius - 10;
+    outerRadius = Math.min(width, height) / 2 - 120,
+    innerRadius = outerRadius - 15;
 
+//relation matrix
 var dataset = [
-    [11,  58, 89, 28],
-    [ 51, 18, 20, 61],
-    [ 80, 145, 80, 85],
-    [ 103,   99,  40, 71]
+    [0,  0, 1, 1, 0, 1],
+    [ 0, 0, 1, 1, 0, 1],
+    [ 1, 1, 0, 1, 1, 1],
+    [1, 1, 1, 0, 1, 0],
+    [ 0, 0, 1, 1, 0, 1],
+    [ 1,   1,  1, 0, 1, 0]
   ];;
-//string url for the initial data set
-//would usually be a file path url, here it is the id
-//selector for the <pre> element storing the data
-
-//create number formatting functions
-var formatPercent = d3.format("%");
-var numberWithCommas = d3.format("0,f");
 
 //create the arc path data generator for the groups
 var arc = d3.svg.arc()
@@ -33,18 +29,18 @@ var path = d3.svg.chord()
 //that are the same except for the data.
 function getDefaultLayout() {
     return d3.layout.chord()
-    .padding(0.03)
+    .padding(0.1) // space bewtween groups
     .sortSubgroups(d3.descending)
     .sortChords(d3.ascending);
 }  
 var last_layout; //store layout between updates
-var regions; //store neighbourhood data outside data-reading function
+var categories; //store neighbourhood data outside data-reading function
 
 /*** Initialize the visualization ***/
 var g = d3.select("#my_dataviz").append("svg")
         .attr("width", width)
         .attr("height", height)
-    .append("g")
+        .append("g")
         .attr("id", "circle")
         .attr("transform", 
               "translate(" + width / 2 + "," + height / 2 + ")");
@@ -57,25 +53,13 @@ g.append("circle")
 //It will ensure that the <g> responds to all mouse events within
 //the area, even after chords are faded out.
 
-/*** Read in the neighbourhoods data and update with initial data matrix ***/
-//normally this would be done with file-reading functions
-//d3. and d3.json and callbacks, 
-//instead we're using the string-parsing functions
-//d3.csv.parse and JSON.parse, both of which return the data,
-//no callbacks required.
-
-
-d3.csv("institutions.csv", function(error, regionData) {
-
-    if (error) {alert("Error reading file: ", error.statusText); return; }
-    
-    regions = regionData; 
-        //store in variable accessible by other functions
-
+//read data
+d3.csv("categories.csv", function(error, categoryData) {
+    if (error) {alert("Error reading file: ", error.statusText); return; }   
+    categories = categoryData; 
     updateChords(); 
-    //call the update method with the default dataset
     
-}); //end of d3.csv function
+});
 
 
 /* Create OR update a chord layout from a data matrix */
@@ -101,20 +85,6 @@ function updateChords(  ) {
     
     var newGroups = groupG.enter().append("g")
         .attr("class", "group");
-    //the enter selection is stored in a variable so we can
-    //enter the <path>, <text>, and <title> elements as well
-
-    
-    //Create the title tooltip for the new groups
-    newGroups.append("title");
-    
-    //Update the (tooltip) title text based on the data
-    groupG.select("title")
-        .text(function(d, i) {
-            return numberWithCommas(d.value) 
-                + " x (10\u00B3) in USD exports from " 
-                + regions[i].name;
-        });
 
     //create the arc paths and set the constant attributes
     //(those based on the group index, not on the value)
@@ -125,15 +95,15 @@ function updateChords(  ) {
             //even if groups are sorted
         })
         .style("fill", function (d) {
-            return regions[d.index].color;
-        });
+            return categories[d.index].color;
+        })
+        ;
     
     //update the paths to match the layout
     groupG.select("path") 
         .transition()
-            .duration(1500)
-        .attrTween("d", arcTween( last_layout ))
-        ;
+        .duration(1500)
+        .attrTween("d", arcTween( last_layout ));
     
     //create the group labels
     newGroups.append("svg:text")
@@ -143,7 +113,7 @@ function updateChords(  ) {
         .attr("dy", ".35em")
         .attr("color", "#fff")
         .text(function (d) {
-            return regions[d.index].name; 
+            return categories[d.index].name; 
         });
 
     //position group labels to match layout
@@ -175,33 +145,6 @@ function updateChords(  ) {
     var newChords = chordPaths.enter()
         .append("path")
         .attr("class", "chord");
-    
-    // Add title tooltip for each new chord.
-    newChords.append("title");
-    
-    // Update all chord title texts
-    // chordPaths.select("title")
-    //     .text(function(d) {
-    //         if (regions[d.target.index].name !== regions[d.source.index].name) {
-    //             return [numberWithCommas(d.source.value),
-    //                     " exports from ",
-    //                     regions[d.source.index].name,
-    //                     " to ",
-    //                     regions[d.target.index].name,
-    //                     "\n",
-    //                     numberWithCommas(d.target.value),
-    //                     " exports from ",
-    //                     regions[d.target.index].name,
-    //                     " to ",
-    //                     regions[d.source.index].name
-    //                     ].join(""); 
-    //         } 
-    //         else { //source and target are the same
-    //             return numberWithCommas(d.source.value) 
-    //                 + " exports ended in " 
-    //                 + regions[d.source.index].name;
-    //         }
-    //     });
 
     //handle exiting paths:
     chordPaths.exit().transition()
@@ -212,18 +155,16 @@ function updateChords(  ) {
     //update the path shape
     chordPaths.transition()
         .duration(1500)
-        //.attr("opacity", 0.5) //optional, just to observe the transition
         .style("fill", function (d) {
-            return regions[d.source.index].color;
+            return categories[d.source.index].color;
         })
         .attrTween("d", chordTween(last_layout))
-        //.transition().duration(100).attr("opacity", 1) //reset opacity
     ;
 
     //add the mouseover/fade out behaviour to the groups
     //this is reset on every update, so it will use the latest
     //chordPaths selection
-    groupG.on("mouseover", function(d) {
+    groupG.on("mouseover", function (d) {
         chordPaths.classed("fade", function (p) {
             //returns true if *neither* the source or target of the chord
             //matches the group that has been moused-over

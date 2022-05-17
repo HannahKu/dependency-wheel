@@ -67,9 +67,9 @@ p {
     pointer-events: all;
 }
 path.chord {
+    opacity: 0.5;
     stroke: #000;
     stroke-width: .10px;
-    transition: opacity 0.3s;
 }
  #circle:hover path.fade {
     opacity: 0;
