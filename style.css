@@ -7,7 +7,6 @@
     pointer-events: all;
 }
 path.chord {
-    opacity: 0.5;
     stroke: #000;
     stroke-width: .10px;
 }
@@ -21,4 +20,7 @@ text {
     font-family: Arial Narrow,Arial,sans-serif;
     text-align: center;
     font-size: 14px;
+}
+body{
+    background-color: #fff500;
 }

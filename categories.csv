@@ -1,14 +1,14 @@
 name,color
-IA,#FF00FF
-IPPE,#FF00FF
-IEE,#FF00FF
-Pfiffner Group,#0000FF
-Brugg Cables,#0000FF
-Veranstaltungen,#6495ED
-Forschungsprojekte,#6495ED
-Aktivitäten,#6495ED
-Praxissemester,#6495ED
-Studienprojekte,#6495ED
-Kompetenz 3,#F4A460
-Kompetenz 2,#F4A460
-Kompetenz 1,#F4A460
+IA,#e5ff26
+IPPE,#e5ff26
+IEE,#e5ff26
+Pfiffner Group,#FFFFFF
+Brugg Cables,#FFFFFF
+Veranstaltungen,#000000
+Forschungsprojekte,#000000
+Aktivitäten,#000000
+Praxissemester,#000000
+Studienprojekte,#000000
+Kompetenz 3,#d7d7d7
+Kompetenz 2,#d7d7d7
+Kompetenz 1,#d7d7d7
