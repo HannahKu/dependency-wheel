@@ -8,10 +8,10 @@ var width = 1000,
 //EDIT
 var dataset = [
     [0,  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//1 Hochschulpartner
-    [0,  0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],//2 Institut Elekrtrische Energietechnik FHNW
+    [1,  0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],//2 Institut Elekrtrische Energietechnik FHNW
     [0,  0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],//3 Weitere Institute FHNW
-    [0,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//4 Pfiffner Group
-    [0,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//5 Brugg Cables
+    [0,  1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//4 Pfiffner Group
+    [0,  1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//5 Brugg Cables
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//6 Sichtbarkeit
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//7 Veranstaltungen
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//8 Forschungsprojekte
