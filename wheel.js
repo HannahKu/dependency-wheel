@@ -8,18 +8,18 @@ var width = 1000,
 //EDIT
 var dataset = [
     [0,  1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],//1 Hochschulpartner
-    [1,  0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0],//2 Institut Elekrtrische Energietechnik FHNW
+    [1,  0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0],//2 Institut Elekrtrische Energietechnik FHNW
     [0,  0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0],//3 Weitere Institute FHNW
-    [0,  1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],//4 Pfiffner Group
-    [0,  1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],//5 Brugg Cables
+    [0,  1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0],//4 Pfiffner Group
+    [0,  1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],//5 Brugg Cables
     [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],//6 Sichtbarkeit
-    [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//7 Veranstaltungen
-    [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],//8 Forschungsprojekte
+    [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],//7 Veranstaltungen
+    [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],//8 Forschungsprojekte
     [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],//9 Praxis integriertes Studium
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1],//10 Studierenden Projekte
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],//11 Nachhaltigkeit
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],//12 Elektromobilität
-    [0,  0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],//13 Energie
+    [0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1],//10 Studierenden Projekte
+    [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0],//11 Nachhaltigkeit
+    [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],//12 Elektromobilität
+    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//13 Energie
   ];
 
 //create the arc path data generator for the groups
