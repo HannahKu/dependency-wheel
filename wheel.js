@@ -1,6 +1,6 @@
 /*** Define parameters and tools ***/
-var width = 760,
-    height = 820,
+var width = 800,
+    height = 900,
     outerRadius = Math.min(width, height) / 2 - 120,
     innerRadius = outerRadius - 15;
 
