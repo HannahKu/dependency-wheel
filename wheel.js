@@ -1,25 +1,25 @@
 /*** Define parameters and tools ***/
 var width = 800,
-    height = 900,
+    height = 1000,
     outerRadius = Math.min(width, height) / 2 - 120,
     innerRadius = outerRadius - 15;
 
 //relation matrix
 //EDIT
 var dataset = [
-    [0,  0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1],//IA
-    [0,  0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1],
-    [0,  0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0],
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0],
-    [0,  0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
-    [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-    [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-    [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [1,  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0,  0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1],//Hochschulpartner
+    [0,  0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1],//Weitere Institute FHNW
+    [0,  0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0],//Institut Elekrtrische Energietechnik FHNW
+    [0,  0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0],//Pfiffner Group
+    [0,  0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],//Brugg Cables
+    [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//Sichtbarkeit
+    [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],//Veranstaltungen
+    [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],//Forschungsprojekte
+    [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],//Praxis integriertes Studium
+    [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],//Studierenden Projekte
+    [1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],//Nachhaltigkeit
+    [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],//Elektromobilität
+    [1,  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//Energie
   ];
 
 //create the arc path data generator for the groups
