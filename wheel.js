@@ -7,7 +7,7 @@ var width = 1000,
 //relation matrix
 //EDIT
 var dataset = [
-    [0,  0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1],//Hochschulpartner
+    [0,  0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//Hochschulpartner
     [0,  0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1],//Weitere Institute FHNW
     [0,  0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0],//Institut Elekrtrische Energietechnik FHNW
     [0,  0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0],//Pfiffner Group
