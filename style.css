@@ -11,7 +11,7 @@ path.chord {
     stroke-width: .10px;
 }
  #circle:hover path.fade {
-    opacity: 5;
+    opacity: 0;
 }
 
 /*text is regions name only on chord diagram and scroll text*/
