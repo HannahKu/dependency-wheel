@@ -19,14 +19,6 @@ var dataset = [
     [0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1],//10 Brugg Cables
     [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0],//11 Gut eingespielte Zusammenarbeit
     [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],//12 Beherbung Fachkräftemangel
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//13 Sichtbarkeit
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//14 Veranstaltungen
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//15 Forschungsprojekte
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//16 Praxisintegriertes Studium
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//17 Studierendenprojekte
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//18 Elektrische Energiespeicherung
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//19 Nachhaltige Energieversorgung
-    [0,  0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],//20 Elektrische Netze der Zukunft
   ];
 
 //create the arc path data generator for the groups
