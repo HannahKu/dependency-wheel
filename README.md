@@ -30,3 +30,14 @@ Wird im style.css angepasst:
  body{
     background-color: #FFFFF;
 }
+```
+
+### Opacity der Verbindungslinien
+```
+path.chord {
+    stroke: #000;
+    stroke-width: .10px;
+    opacity: 0.7;
+}
+```
+
