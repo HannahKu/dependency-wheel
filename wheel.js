@@ -32,7 +32,7 @@ var dataset = [
 
 for (let i = 0; i < 21; i++){
   for (let j = i+1; j < 21; j++){
-    dataset[j][i] = dataset[i][j]
+    dataset[j][i] = dataset[i][j];
   } 
 } 
 
