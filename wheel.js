@@ -7,17 +7,18 @@ var width = 1000,
 //relation matrix
 //EDIT
 var dataset = [
-  [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1],// 1 Institut für Elektrische Energietechnik FHNW
-  [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0],// 2 Hochschule für Technik FHNW 
-  [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1],// 3 Weitere Hochschulpartner FHNW
-  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 4 Pfiffner
-  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 5 Moser Glaser
-  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 6 Alpha-ET
-  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 7 Haefely
-  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 8 Haveco 
-  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 9 Brugg Cables
-  [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 10 Gut eingespielte Zusammenarbeit
-  [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],// 11 Gewinnung von Fachkräften
+  [0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1],// 1 Institut für Elektrische Energietechnik FHNW
+  [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1],// 2 Hochschule für Technik FHNW 
+  [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0],// 3 Weitere Hochschulpartner FHNW
+  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 4 Pfiffner
+  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 5 Moser Glaser
+  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 6 Alpha-ET
+  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 7 Haefely
+  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 8 Haveco 
+  [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 9 Brugg Cables
+  [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 10 Gut eingespielte Zusammenarbeit
+  [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 11 Gewinnung von Fachkräften
+  [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //12 Innovationsförderung
 ];
 
 
