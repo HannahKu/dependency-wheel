@@ -7,7 +7,7 @@ var width = 1000,
 //relation matrix
 //EDIT
 var dataset = [
-  [0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1],// 1 Institut für Elektrische Energietechnik FHNW
+  [0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1],// 1 Institut für Elektrische Energietechnik FHNW
   [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1],// 2 Hochschule für Technik FHNW 
   [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0],// 3 Weitere Hochschulpartner FHNW
   [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 4 Pfiffner
@@ -18,7 +18,7 @@ var dataset = [
   [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 9 Brugg Cables
   [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 10 Gut eingespielte Zusammenarbeit
   [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],// 11 Gewinnung von Fachkräften
-  [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //12 Innovationsförderung
+  [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //12 Innovationsförderung
 ];
 
 
