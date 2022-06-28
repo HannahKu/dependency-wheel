@@ -19,16 +19,16 @@ var dataset = [
   [1,	0, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	1, 0,	0, 0,	0, 0,	0, 0,	0],// 10 Gut eingespielte Zusammenarbeit
   [1,	0, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 1,	1, 0,	0, 0,	0, 0,	0, 0,	0],// 11 Gewinnung von Fachkräften
   [1,	1, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 1,	1, 0,	0, 1,	0, 0,	1, 1,	1],//12 Innovationsförderung
-  [0,	1, 0,	0, 0,	0, 0,	0, 0,	1, 1,	1, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0],//13 Austausch und Veranstaltungen
-  [0,	1, 0,	1, 0,	0, 0,	0, 0,	1, 1,	1, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0],//14 Forschungsprojekte
-  [1,	1, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0],//15 Praxisintegriertes Studium
-  [1,	0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//16 Studierendenprojekte
-  [1, 1, 1,	1, 1,	0, 0,	1, 1,	0, 0,	1, 0,	0, 0,	0, 0,	0, 0,	1, 1,	1],//17 Elektrische Energiespeicherung
-  [1,	1, 0, 1, 1,	0, 0,	0, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0, 0, 0,	0],//18 Nachhaltige Energieversorgung
-  [0, 0, 1,	0, 0,	0, 0,	0, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	1, 1,	1],//19 Elektrische Netze der Zukunft
-  [0,	1, 0,	1, 0,	0, 0,	1, 1,	0, 0,	1, 0,	0, 0,	0, 1,	0, 1,	0, 0,	0],//20 Weiterentwicklung Expertise
-  [0,	1, 0,	1, 0,	0, 0,	0, 1,	0, 0,	1, 0,	0, 0,	0, 1,	0, 1,	0, 0,	0],//21 Stärkung der Standorte
-  [1,	1, 0,	1, 0,	0, 0,	0, 0,	0, 0,	1, 0,	0, 0,	0, 1,	0, 1,	0, 0,	0], // Gemeinsame Nutzung von Infratsrukturen 
+  [0,	1, 0,	0, 0,	0, 0,	0, 0,	1, 1,	1, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0],//13 Weiterentwicklung Expertise
+  [0,	1, 0,	1, 0,	0, 0,	0, 0,	1, 1,	1, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0],//14 Stärkung der Standorte
+  [1,	1, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	0],//15 Gemeinsame Nutzung von Infrastrukturen 
+  [1,	0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],//16 Austausch und Veranstaltungen
+  [1, 1, 1,	1, 1,	0, 0,	1, 1,	0, 0,	1, 0,	0, 0,	0, 0,	0, 0,	1, 1,	1],//17 Forschungsprojekte
+  [1,	1, 0, 1, 1,	0, 0,	0, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0, 0, 0,	0],//18 Praxisintegriertes Studium
+  [0, 0, 1,	0, 0,	0, 0,	0, 1,	0, 0,	0, 0,	0, 0,	0, 0,	0, 0,	1, 1,	1],//19 Studierendenprojekte
+  [0,	1, 0,	1, 0,	0, 0,	1, 1,	0, 0,	1, 0,	0, 0,	0, 1,	0, 1,	0, 0,	0],//20 Elektrische Energiespeicherung
+  [0,	1, 0,	1, 0,	0, 0,	0, 1,	0, 0,	1, 0,	0, 0,	0, 1,	0, 1,	0, 0,	0],//21 Nachhaltige Energieversorgung
+  [1,	1, 0,	1, 0,	0, 0,	0, 0,	0, 0,	1, 0,	0, 0,	0, 1,	0, 1,	0, 0,	0],//22 Elektrische Netze der Zukunft 
   
 
 ];
